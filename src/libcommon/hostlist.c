@@ -202,7 +202,7 @@ struct hostlist_iterator {
 
 /* ------[ static function prototypes ]------ */
 
-static void _error(char *file, int line, char *mesg, ...);
+static void _error(char *file, int line, char *mesg, ...) __attribute__ ((unused));
 static char * _next_tok(char *, char **);
 static int    _zero_padded(unsigned long, int);
 static int    _width_equiv(unsigned long, int *, unsigned long, int *);
