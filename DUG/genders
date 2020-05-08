@@ -1,0 +1,15 @@
+#
+# $Id: genders.sample,v 1.9 2007-01-16 00:48:30 chu11 Exp $
+# $Source: /g/g0/achu/temp/genders-cvsbackup-full/genders/genders.sample,v $
+#
+#
+#
+#slc0  passwdhost,up2000,type=up2000,ditty=0,crash,eip,elan,all,cluster=test
+#slc1  up2000,type=up2000,ditty=0,wti=/dev/ttyD23:0,crash,eip,elan,all,cluster=test
+#slc2  up2000,type=up2000,ditty=2,wti=/dev/ttyD23:1,crash,eip,elan,all,cluster=test
+#slc3  up2000,type=up2000,ditty=3,wti=/dev/ttyD23:2,crash,eip,elan,all,cluster=test
+#slc4  up2000,type=up2000,ditty=4,wti=/dev/ttyD23:3,crash,eip,elan,all,cluster=test
+#slc5  up2000,type=up2000,ditty=5,wti=/dev/ttyD23:4,crash,eip,elan,all,cluster=test
+
+node1 ip:1.2.3.4,mac=ff:cc:ee:dd:aa:bb,cluster=work
+node2 ip:1.2.3.4,mac=ff:cc:ee:dd:aa:bc,cluster=work
