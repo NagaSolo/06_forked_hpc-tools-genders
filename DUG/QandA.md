@@ -1,4 +1,4 @@
-# Q and A by DUG
+# Q and A with DUG
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Q1: Where do you typically look for system information/statistics on Linux?
