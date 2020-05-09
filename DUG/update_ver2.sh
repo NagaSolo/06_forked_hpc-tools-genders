@@ -10,7 +10,15 @@
 #oldAttr = ./nodeatrr -f genders -v hostname mac
 
 ## TODO function for reading file in line
-gendersConfig=$(<genders2)
+
+# when invoking this update script, genders file must be passed on as the first parameter
+gendersFile="$1"
+echo "$(cat $gendersFile)"
+#while IFS= read -r line
+#do
+#    echo "$line"
+#done < "$gendersFile"
+#echo "$gendersFile"
 
 read -p 'Specify host: ' hostName
 echo "${hostName} mac attribute is to be changed"
@@ -21,5 +29,5 @@ echo "${oldMacAttr} is the old mac value of ${hostName}"
 read -p 'Specify new mac address: ' newMacAttr
 echo ${newMacAttr}
 
-newHostAttr=${gendersConfig//${oldMacAttr}/${newMacAttr}}
-echo ${newHostAttr} > output
+newHostAttr=${gendersFile//${oldMacAttr}/${newMacAttr}}
+echo ${newHostAttr} > newConfig
