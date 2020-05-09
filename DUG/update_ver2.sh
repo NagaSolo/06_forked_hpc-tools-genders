@@ -12,23 +12,19 @@
 ## TODO function for reading file in line
 
 # when invoking this update script, genders file must be passed on as the first parameter
+# e.g 'sh update.sh genders'
 gendersFile="$1"
 gendersFileTemp="$(cat $gendersFile)"
 echo "$gendersFileTemp"
-#while IFS= read -r line
-#do
-#    echo "$line"
-#done < "$gendersFile"
-#echo "$gendersFile"
 
-read -p 'Specify host: ' hostName
-echo "${hostName} mac attribute is to be changed"
+read -p 'Specify host to update: ' hostName
+echo "${hostName} Mac attribute is to be changed"
 
 oldMacAttr="$(./nodeattr -f genders -v ${hostName} mac)"
-echo "${oldMacAttr} is the old mac value of ${hostName}"
+echo "${oldMacAttr} is the old Mac address of ${hostName}"
 
-read -p 'Specify new mac address: ' newMacAttr
-echo ${newMacAttr}
+read -p 'Specify new Mac address: ' newMacAttr
+echo "${newMacAttr} is ${hostName} new Mac address"
 
 newHostAttr=${gendersFileTemp//${oldMacAttr}/${newMacAttr}}
 echo ${newHostAttr} > newConfig
