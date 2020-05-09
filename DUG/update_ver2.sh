@@ -13,7 +13,8 @@
 
 # when invoking this update script, genders file must be passed on as the first parameter
 gendersFile="$1"
-echo "$(cat $gendersFile)"
+gendersFileTemp="$(cat $gendersFile)"
+echo "$gendersFileTemp"
 #while IFS= read -r line
 #do
 #    echo "$line"
@@ -29,5 +30,5 @@ echo "${oldMacAttr} is the old mac value of ${hostName}"
 read -p 'Specify new mac address: ' newMacAttr
 echo ${newMacAttr}
 
-newHostAttr=${gendersFile//${oldMacAttr}/${newMacAttr}}
+newHostAttr=${gendersFileTemp//${oldMacAttr}/${newMacAttr}}
 echo ${newHostAttr} > newConfig
