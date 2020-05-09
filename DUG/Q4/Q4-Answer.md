@@ -11,5 +11,5 @@
 
 * Script usage: 
 	* `./update.sh genders`
-	* input on terminal which node intended for change were to happen
-	* input on terminal the new Mac address for the node  
+	* input on terminal which node intended for change were to happen, e.g: "node1"
+	* input on terminal the new Mac address for the node, e.g: "aa:bb:cc:dd:ee:ff"  
