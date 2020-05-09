@@ -44,7 +44,8 @@ node1 ip=1.2.3.4,mac=ff:cc:ee:dd:aa:bb,cluster=work
 node2 ip=1.2.3.5,mac=ff:cc:ee:dd:aa:bc,cluster=work
 
 
-### A4: 
+### A4:
+Here are prepare the binary, script and my flow for the question,
 - Flow: https://github.com/NagaSolo/06_forked_hpc-tools-genders/blob/master/DUG/Q4/Q4-Answer.md
 - Script and binary dir: https://github.com/NagaSolo/06_forked_hpc-tools-genders/blob/master/DUG/Q4/
 
