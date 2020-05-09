@@ -17,14 +17,25 @@ gendersFile="$1"
 gendersFileTemp="$(cat $gendersFile)"
 echo "$gendersFileTemp"
 
+sleep 1
+
 read -p 'Specify host to update: ' hostName
+sleep 1
 echo "${hostName} Mac attribute is to be changed"
 
+sleep 1
+
 oldMacAttr="$(./nodeattr -f genders -v ${hostName} mac)"
+sleep 1
 echo "${oldMacAttr} is the old Mac address of ${hostName}"
 
+sleep 1
+
 read -p 'Specify new Mac address: ' newMacAttr
+sleep 1
 echo "${newMacAttr} is ${hostName} new Mac address"
 
+sleep 1
+
 newHostAttr=${gendersFileTemp//${oldMacAttr}/${newMacAttr}}
-echo ${newHostAttr} > newConfig
+echo "${newHostAttr}" > newConfig
