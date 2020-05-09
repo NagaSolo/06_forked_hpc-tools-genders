@@ -4,7 +4,7 @@
 ## Q1: Where do you typically look for system information/statistics on Linux?
 
 ### A1: 
-I usually use command such as `netstat`, `ifconfig` or just `hostname` depending on what is needed to do with clusters, since currently I am working in deploying a kubernetes clusters. The other useful tool is `htop`
+I usually use command such as `netstat`, `ifconfig` or just `hostname` depending on what is needed to do with clusters, since currently I am working in deploying a kubernetes clusters. The other useful tool is `htop`, for memory usage, process id.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
