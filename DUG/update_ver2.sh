@@ -37,5 +37,6 @@ echo "${newMacAttr} is ${hostName} new Mac address"
 
 sleep 1
 
-newHostAttr=${gendersFileTemp//${oldMacAttr}/${newMacAttr}}
-echo "${newHostAttr}" > newConfig
+newHostAttr=${gendersFileTemp//${oldMacAttr}/${newMacAttr}} 
+echo "${newHostAttr}" > "$gendersFile"
+echo "Succesfully updated genders config file"
