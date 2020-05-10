@@ -5,10 +5,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+    
 jobs:
   build:
-
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -22,6 +22,8 @@ jobs:
     - name: configure
       run: sudo bash ./configure
     - name: make
+      env: 
+       cc: gcc
       run: sudo make
     - name: make check
       run: sudo make check
