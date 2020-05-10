@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: configure gcc
+      run: sudo apt install build-essential
+    - name: install flex
+      run: sudo apt install flex
     - name: configure
       run: sudo bash ./configure
     - name: make
